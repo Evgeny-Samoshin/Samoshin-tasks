@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+    crossorigin="anonymous" />
   <link rel="stylesheet" href="./style.css">
   <title>Task1.1</title>
 </head>
@@ -56,7 +58,7 @@
         <!-- </div> -->
       </header>
       <main class="main">
-        <section class="baner">
+        <section class="banner">
           <div class="slide">
             <div class="slide__img">
               <div class="slide__title">Share your Foor Sence</div>
@@ -83,48 +85,61 @@
           </div>
         </section>
         <section class="subscribe">
-          <form action="">
-            <label for="">Sign up for out newsletter to receive a handpicked selection of the best stories, recipes, and
+          <form class="subscribe__form" action="">
+            <img src="./assets/img/icons/mail-icon.svg" alt="mail-icon" class="subscribe__icon">
+            <label class="subscribe__label" for="">Sign up for out newsletter to receive a handpicked selection of the
+              best stories, recipes, and
               news, delivered weekly to your inbox.</label>
-            <input type="text" placeholder="Email">
-            <button>Subscribe</button>
+            <input class="subscribe__input" type="text" placeholder="Email">
+            <button class="subscribe__button">Subscribe</button>
           </form>
         </section>
         <section class="articles">
-          <article>
-            <img src="" alt="">
-            <h3 class="title"></h3>
-            <p class="text"></p>
+          <article class="article">
+            <a href="#"><img src="./assets/img/backgraunds/potato.svg" alt="potato-img" class="article__img"></a>
+            <a href="#">
+              <h3 class="article__title">2012’s Best Summer Cookbooks</h3>
+            </a>
+            <p class="article__text">With the best of the season coming from “orchards, farms and gardens,” NPR has put
+              together an impressive collection of 10 summer cookbooks.</p>
             <div>
-              <span class="date">May 17, 2020/</span>
-              <a href="">Read...</a>
+              <span class="article__date">May 17, 2020/</span>
+              <a href="#" class="article__link">Read...</a>
             </div>
           </article>
-          <article>
-            <img src="" alt="">
-            <h3 class="title"></h3>
-            <p class="text"></p>
+          <article class="article">
+            <a href="#"><img src="./assets/img/backgraunds/garnier.svg" alt="garnier-img" class="article__img"></a>
+            <a href="#">
+              <h3 class="article__title">How to Make Vegetable Chips</h3>
+            </a>
+            <p class="article__text">About a month ago, I ate almost an entire box of kale chips. My brother and I were
+              visiting our cousin in Brooklyn, and before a very thoughtfully prepared vagan...</p>
             <div>
-              <span class="date">May 17, 2020/</span>
-              <a href="">Read...</a>
+              <span class="article__date">May 17, 2020/</span>
+              <a href="#" class="article__link">Read...</a>
             </div>
           </article>
-          <article>
-            <img src="" alt="">
-            <h3 class="title"></h3>
-            <p class="text"></p>
+          <article class="article">
+            <a href="#"><img src="./assets/img/backgraunds/parsley.svg" alt="parsley-img" class="article__img"></a>
+            <a href="#">
+              <h3 class="article__title">Join us on Pinterest!</h3>
+            </a>
+            <p class="article__text">If I could curate a cookbook for you, this would be it.</p>
             <div>
-              <span class="date">May 17, 2020/</span>
-              <a href="">Read...</a>
+              <span class="article__date">May 17, 2020/</span>
+              <a href="#" class="article__link">Read...</a>
             </div>
           </article>
-          <article>
-            <img src="" alt="">
-            <h3 class="title"></h3>
-            <p class="text"></p>
+          <article class="article">
+            <a href="#"><img src="./assets/img/backgraunds/art-flower.svg" alt="flower" class="article__img"></a>
+            <a href="#">
+              <h3 class="article__title">Recipes from a Sunday Supper</h3>
+            </a>
+            <p class="article__text">I could not figure out what to do with the delectable slices of Pear Cake that I
+              brought home from this wonderful Sunday supper - eat them slowly, a little bit at...</p>
             <div>
-              <span class="date">May 17, 2020/</span>
-              <a href="">Read...</a>
+              <span class="article__date">May 17, 2020/</span>
+              <a href="#" class="article__link">Read...</a>
             </div>
           </article>
         </section>
