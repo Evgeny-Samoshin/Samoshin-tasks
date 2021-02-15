@@ -16,11 +16,11 @@
   .menu {
     flex: 1 1 100%;
     justify-content: center;
-    column-gap: 24px;
+    column-gap: 8px;
   }
 
   .subscribe__input {
-    flex: 1 1 30%;
+    flex: 0 1 50%;
   }
 
   .articles {

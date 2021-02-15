@@ -26,7 +26,7 @@
     flex-direction: row;
     justify-content: center;
     flex: 10;
-    column-gap: 40px;
+    column-gap: 8%;
   }
 
   .tweetter {

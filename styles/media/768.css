@@ -1,6 +1,6 @@
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 80%;
+    max-width: 95%;
   }
 
   .header {
@@ -9,7 +9,8 @@
 
   .menu {
     flex-wrap: wrap;
-    justify-content: flex-start;
+    column-gap: 4%;
+    /* justify-content: flex-start; */
   }
 
   .menu__link {
@@ -60,7 +61,7 @@
   }
 
   .subscribe__button {
-    flex: 1 1 10%;
+    flex: 0 1 10%;
   }
 
   .article {

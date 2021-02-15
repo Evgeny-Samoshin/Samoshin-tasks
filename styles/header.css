@@ -1,0 +1,129 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+.logo {
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+}
+
+.menu__link {
+  display: flex;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.menu__link:hover {
+  background-color: #8fdbd7;
+}
+
+.menu__link>img {
+  margin-right: 12px;
+}
+
+.menu__link:hover>img {
+  opacity: 0.3;
+}
+
+.menu__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  padding-left: 44px;
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #34ACA7;
+}
+
+.menu__item_icon::before {
+  content: '';
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0px;
+}
+
+.tools-icon::before {
+  background-image: url('../assets/img/icons/tools-icon.svg');
+
+}
+
+.blog-icon::before {
+  background-image: url('../assets/img/icons/blog-icon.svg');
+}
+
+.list-icon::before {
+  background-image: url('../assets/img/icons/a-list-icon.svg');
+}
+
+.camera-icon::before {
+  background-image: url('../assets/img/icons/camera-icon.svg');
+}
+
+.about-icon::before {
+  background-image: url('../assets/img/icons/about-icon.svg');
+}
+
+.tweetter {
+  width: 140px;
+}
+
+.tweetter__title {
+  font-family: 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  text-transform: uppercase;
+  border-bottom: 1px dashed #E5E5E5;
+  margin-bottom: 10px;
+}
+
+.tweetter__button {
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: Arial;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  color: #34ACA7;
+  cursor: pointer;
+}
+
+.tweetter__button:hover {
+  background: #D9EFEC;
+}
+
+.tweetter__button-img {
+  width: 16px;
+  margin: 6px;
+}
+
+.join-communiti__text {
+  margin-bottom: 15px;
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 19px;
+  color: #000000;
+}
