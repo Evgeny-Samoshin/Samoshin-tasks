@@ -1,0 +1,21 @@
+@media screen and (max-width: 1176px) {
+  .container {
+    max-width: 896px;
+  }
+
+  .navigation {
+    flex: 1;
+  }
+
+  .navigation__subtitle {
+    display: none;
+  }
+
+  .slide__title {
+    width: 40%;
+  }
+
+  .slide__subtitle {
+    width: 69%;
+  }
+}

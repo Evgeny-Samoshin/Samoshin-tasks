@@ -1,0 +1,47 @@
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 716px;
+  }
+
+  .main-container {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    flex: 2;
+    margin-right: 10px;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: center;
+    flex: 10;
+    column-gap: 40px;
+  }
+
+  .tweetter {
+    display: none;
+  }
+
+  .menu__item {
+    padding-left: 0;
+  }
+
+  .menu__item_icon::before {
+    left: 50%;
+    top: -12px;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}

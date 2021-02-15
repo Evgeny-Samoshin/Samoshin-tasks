@@ -1,0 +1,42 @@
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .header {
+    flex-direction: column-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+
+  .menu {
+    flex: 1 1 100%;
+    justify-content: center;
+    column-gap: 24px;
+  }
+
+  .subscribe__input {
+    flex: 1 1 30%;
+  }
+
+  .articles {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .article {
+    flex: 1 1 50%;
+  }
+
+  .footer__legal ul {
+    column-gap: 4px;
+  }
+
+  .footer__legal ul li {
+    padding-right: 4px;
+  }
+}
