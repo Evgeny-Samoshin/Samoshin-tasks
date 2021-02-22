@@ -1,0 +1,36 @@
+.tweetter {
+  width: 140px;
+}
+
+.tweetter__title {
+  @include font($family: $verdana, $size: $font-size--small, $height: $line-height--huge, $color: $dark);
+  text-transform: uppercase;
+  border-bottom: 1px dashed #E5E5E5;
+  margin-bottom: 10px;
+}
+
+.tweetter__button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 5px;
+  @include font($family: $arial, $size: $font-size--tiny, $height: $line-height--small, $style: $italic, $color: $primary-green);
+  cursor: pointer;
+}
+
+.tweetter__button:hover {
+  background: #D9EFEC;
+}
+
+.tweetter__button-img {
+  width: 16px;
+  margin: 6px;
+}
+
+.tweetter__text {
+  margin-bottom: 15px;
+  @include font($family: $arial, $size: $font-size--tiny, $height: $line-height--normal, $style: $italic, $color: $dark);
+}

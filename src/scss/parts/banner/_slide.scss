@@ -1,0 +1,34 @@
+.slide {
+  flex: 10;
+}
+
+.slide__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  background-image: url(./assets/img/baner.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide__title {
+  width: 30%;
+  background: #FFFFFF;
+  @include font($family: $arial, $style: $italic, $size: $font-size--huge, $height: $line-height--huge, $color: $dark);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+.slide__subtitle {
+  width: 53%;
+  background-color: #000;
+  @include font($family: $arial, $style: $italic, $size: $font-size--regular, $height: $line-height--huge, $color: $white);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-bottom: 70px;
+}

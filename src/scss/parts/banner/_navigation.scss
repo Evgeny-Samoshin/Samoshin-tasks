@@ -1,0 +1,26 @@
+.navigation {
+  display: flex;
+  flex: 2;
+}
+
+.navigation__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding-left: 20px;
+  background: #EFF8F7;
+  cursor: pointer;
+}
+
+.navigation__item:hover {
+  background: #D9EFEC;
+}
+
+.navigation__title {
+  @include font($family: $arial, $size: $font-size--big, $height: $line-height--normal, $color: $primary-green);
+}
+
+.navigation__subtitle {
+  @include font($family: $arial, $style: $italic, $size: $font-size--tiny, $height: $line-height--normal, $color: $primary-green);
+}

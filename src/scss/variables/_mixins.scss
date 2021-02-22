@@ -1,0 +1,9 @@
+@mixin font ($family: $arial, $style: $normal, $weight: normal, $size: $font-size--regular, $height: $line-height--regular, $color: $primary-green) {
+  font-family: $family;
+  font-style: $style;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+

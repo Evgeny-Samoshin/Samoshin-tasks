@@ -1,0 +1,60 @@
+.footer {
+  width: 100%;
+  margin-top: 22px;
+
+  &__legal ul {
+    display: flex;
+    column-gap: 8px;
+    margin-bottom: 5px;
+  }
+
+  &__legal ul>li:last-child {
+    border-right: none;
+  }
+
+  &__legal {
+    @include font($size: $font-size--small, $height: $line-height--small);
+    letter-spacing: -0.02em;
+  }
+
+  &__legal a {
+    color: $primary-green;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__copiright {
+    color: $smoke;
+  }
+
+  &__social {
+    display: flex;
+  }
+
+  &__icon {
+    height: 32px;
+    width: 32px;
+    opacity: .2;
+  }
+
+  &__icon_tweet {
+    background-image: url('../assets/icons/twitter-icon.svg');
+  }
+
+  &__icon_fb {
+    background-image: url('../assets/icons/fb-icon.svg');
+  }
+
+  &__icon_rss {
+    background-image: url('../assets/icons/rss-icon.svg');
+  }
+}
+
+.container_bordered {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #E5E5E5;
+  padding: 26px 8px;
+}
