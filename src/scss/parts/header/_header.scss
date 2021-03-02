@@ -1,5 +1,3 @@
 .header {
-  display: flex;
-  flex-direction: column;
-  // flex: 2;
+  @include flex-config($direction: column);
 }

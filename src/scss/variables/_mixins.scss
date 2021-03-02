@@ -7,3 +7,27 @@
   color: $color;
 }
 
+@mixin flex-config($direction: false, $justify: false, $align: false, $flex: false, $wrap: false) {
+  display: flex;
+
+  @if $justify != false {
+    justify-content: $justify;
+  }
+
+  @if $flex != false {
+    flex: $flex;
+  }
+
+  @if $direction != false {
+    flex-direction: $direction;
+  }
+
+  @if $align != false {
+    align-items: $align;
+  }
+
+  @if $wrap != false {
+    flex-wrap: $wrap;
+  }
+}
+

@@ -1,15 +1,13 @@
 .menu {
-  display: flex;
-  flex-direction: column;
+  @include flex-config($direction: column);
   padding: 3px;
 
   &__link {
-    display: flex;
     margin-bottom: 30px;
     border-radius: 4px;
 
     &:hover {
-      background-color: #8fdbd7;
+      background-color: $green-active;
 
       img {
         opacity: 0.3;
@@ -23,8 +21,7 @@
 
   &__item {
     position: relative;
-    display: flex;
-    align-items: center;
+    @include flex-config($align: center);
     min-height: 32px;
     padding-left: 44px;
     @include font(
@@ -45,23 +42,8 @@
   }
 }
 
-.tools-icon::before {
-  background-image: url('../assets/icons/tools-icon.svg');
-
-}
-
-.blog-icon::before {
-  background-image: url('../assets/icons/blog-icon.svg');
-}
-
-.list-icon::before {
-  background-image: url('../assets/icons/a-list-icon.svg');
-}
-
-.camera-icon::before {
-  background-image: url('../assets/icons/camera-icon.svg');
-}
-
-.about-icon::before {
-  background-image: url('../assets/icons/about-icon.svg');
-}
+@each $key, $value in $menu-icons {
+  .#{$key}-icon::before {
+    background-image: url(#{$value})
+  }
+};

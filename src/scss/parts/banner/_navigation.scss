@@ -1,20 +1,16 @@
 .navigation {
-  display: flex;
-  flex: 2;
+  @include flex-config($flex: 2)
 }
 
 .navigation__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1;
+  @include flex-config($justify: center, $direction: column, $flex: 1);
   padding-left: 20px;
-  background: #EFF8F7;
+  background: $light-green;
   cursor: pointer;
 }
 
 .navigation__item:hover {
-  background: #D9EFEC;
+  background: $green-active;
 }
 
 .navigation__title {

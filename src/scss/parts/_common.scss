@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: $white;
 }
 
 ul {
@@ -20,14 +20,12 @@ a {
 }
 
 .main-container {
-  display: flex;
-  justify-content: space-between;
+  @include flex-config($justify: space-between);
   margin-top: 46px;
   column-gap: 44px;
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
+  @include flex-config($direction: column);
   row-gap: 30px;
 }

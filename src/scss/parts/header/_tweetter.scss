@@ -5,16 +5,15 @@
 .tweetter__title {
   @include font($family: $verdana, $size: $font-size--small, $height: $line-height--huge, $color: $dark);
   text-transform: uppercase;
-  border-bottom: 1px dashed #E5E5E5;
+  border-bottom: 1px dashed $smoke;
   margin-bottom: 10px;
 }
 
 .tweetter__button {
-  display: flex;
-  align-items: center;
+  @include flex-config($align: center);
   width: 100%;
-  background: #FFFFFF;
-  border: 1px solid #E5E5E5;
+  background: $white;
+  border: 1px solid $smoke;
   box-sizing: border-box;
   border-radius: 5px;
   @include font($family: $arial, $size: $font-size--tiny, $height: $line-height--small, $style: $italic, $color: $primary-green);
@@ -22,7 +21,7 @@
 }
 
 .tweetter__button:hover {
-  background: #D9EFEC;
+  background: $green-active;
 }
 
 .tweetter__button-img {

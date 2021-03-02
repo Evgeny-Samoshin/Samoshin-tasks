@@ -1,11 +1,9 @@
 .slide {
-  flex: 10;
+  @include flex-config($flex: 10)
 }
 
 .slide__img {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  @include flex-config($direction: column, $justify: flex-end, $flex: 1);
   height: 100%;
   background-image: url(./assets/img/baner.svg);
   background-size: cover;
@@ -15,20 +13,18 @@
 
 .slide__title {
   width: 30%;
-  background: #FFFFFF;
+  background: $white;
   @include font($family: $arial, $style: $italic, $size: $font-size--huge, $height: $line-height--huge, $color: $dark);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0px;
   text-align: center;
   letter-spacing: 0.01em;
 }
 
 .slide__subtitle {
   width: 53%;
-  background-color: #000;
+  background-color: $dark;
   @include font($family: $arial, $style: $italic, $size: $font-size--regular, $height: $line-height--huge, $color: $white);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0px;
   text-align: center;
   margin-bottom: 70px;
 }

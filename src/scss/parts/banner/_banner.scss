@@ -1,9 +1,4 @@
 .banner {
-  display: flex;
-  flex-direction: column;
+  @include flex-config($direction: column);
   height: 530px;
 }
-
-
-
-

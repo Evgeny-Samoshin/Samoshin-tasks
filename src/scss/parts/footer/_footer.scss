@@ -39,22 +39,15 @@
     opacity: .2;
   }
 
-  &__icon_tweet {
-    background-image: url('../assets/icons/twitter-icon.svg');
-  }
-
-  &__icon_fb {
-    background-image: url('../assets/icons/fb-icon.svg');
-  }
-
-  &__icon_rss {
-    background-image: url('../assets/icons/rss-icon.svg');
-  }
+  @each $key, $value in $social-icons {
+    &__icon_#{$key} {
+      background-image: url(#{$value})
+    }
+  };
 }
 
 .container_bordered {
-  display: flex;
-  justify-content: space-between;
-  border-top: 2px solid #E5E5E5;
+  @include flex-config($justify: space-between);
+  border-top: 2px solid $smoke;
   padding: 26px 8px;
 }
