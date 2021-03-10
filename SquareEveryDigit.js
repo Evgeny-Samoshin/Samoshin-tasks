@@ -1,3 +1,5 @@
+"use strict"
+
 let someDigit = 9119;
 
 const squareEveryDigit = (digits) => {
@@ -13,21 +15,21 @@ const squareEveryDigit = (digits) => {
 squareEveryDigit(someDigit);
 
 // Через паттерн Модуль
+let number = 9119;
 
-const squareEveryDigitModule = (() => {
-  let someDigit = 9119;
+const squareEveryDigitModule = ((num) => {
+  let degre = 2;
 
   return {
-    run: () => {
+    run: (num) => {
       console.log(
-        someDigit.toString()
+        num.toString()
           .split('')
-          .map((item) => {
-            return item ** 2;
-          }).join('')
+          .map(item => item ** degre)
+          .join('')
       );
     }
   }
 })()
 
-squareEveryDigitModule.run()
+squareEveryDigitModule.run(number)

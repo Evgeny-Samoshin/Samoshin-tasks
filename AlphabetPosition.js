@@ -1,3 +1,5 @@
+"use strict"
+
 let startPositionInUTF16 = 97;
 let quantitySymbols = 26;
 let someString = "The sunset sets at twelve o' clockaaaa.";
@@ -16,15 +18,17 @@ const getSymbolsArray = (start, count) => {
 let symbolsArray = getSymbolsArray(startPositionInUTF16, quantitySymbols);
 
 const getAlphabetPosition = (symbol, alphabet) => {
-  return alphabet.indexOf(symbol.toLowerCase()) + 1;
+  return alphabet.indexOf(symbol) + 1;
 };
 
 const parseCharStringToPosString = (str, alphabet) => {
   let symbolsPosition = '';
+  let lowerCaseString = str.toLowerCase();
+  let length = lowerCaseString.length;
 
-  for (let i = 0; i < str.length; i++) {
-    if (alphabet.includes(str.charAt(i).toLowerCase())) {
-      symbolsPosition += ` ${getAlphabetPosition(str.charAt(i), alphabet)}`;
+  for (let i = 0; i < length; i++) {
+    if (alphabet.includes(lowerCaseString.charAt(i))) {
+      symbolsPosition += ` ${getAlphabetPosition(lowerCaseString.charAt(i), alphabet)}`;
     }
   }
 
