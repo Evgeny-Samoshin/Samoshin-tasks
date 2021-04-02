@@ -1,0 +1,1 @@
+(()=>{"use strict";document.getElementById("game-frame").getContext("2d"),new class extends class{constructor(t,s,e){this.x=t,this.y=s,this.color=e,this.width=10,this.height=10}draw(){context.fillStyle=this.color,context.fillRect(this.x,this.y,this.width,this.height)}}{constructor(t,s,e){super(t,s,e),this.width=20,this.height=20}}(1,2,"red").draw()})();
