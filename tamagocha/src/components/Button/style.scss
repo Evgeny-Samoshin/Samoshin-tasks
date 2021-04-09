@@ -1,0 +1,26 @@
+.controls {
+  .btn {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+  }
+  .eat {
+    background-color: #E74C3C;
+  }
+  .drink {
+    background-color: #3498DB;
+  }
+  .rest {
+    background-color: #E67E22;
+  }
+  .work {
+    background-color: #95A5A6;
+  }
+}
